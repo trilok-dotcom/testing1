@@ -461,16 +461,20 @@
             }
 
             revealMessage() {
-                const text = 'You are the most beautiful';
+                const text = 'you are the most beautiful';
                 
                 this.messageContainer.classList.add('visible');
                 this.messageContainer.style.opacity = '1';
                 
-                // Typewriter effect
+                // Clear any existing content
+                this.message.innerHTML = '';
+                
+                // Typewriter effect with proper spacing
                 text.split('').forEach((char, index) => {
                     const span = document.createElement('span');
                     span.textContent = char;
-                    span.style.animationDelay = `${index * 100}ms`;
+                    span.style.animationDelay = `${index * 150}ms`;
+                    span.style.marginRight = char === ' ' ? '8px' : '2px';
                     this.message.appendChild(span);
                 });
             }
