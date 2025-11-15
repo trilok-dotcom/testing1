@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SVG Rose Animation</title>
+    <title>SVG Rose Animation - v2.0</title>
+    <meta name="description" content="Beautiful romantic rose animation that forms in 8 seconds with particle effects">
+    <meta property="og:title" content="Romantic Rose Animation">
+    <meta property="og:description" content="Watch a beautiful rose form from petals in 8 seconds">
+    <meta property="og:type" content="website">
+    <meta name="version" content="2.0">
     <style>
+        /* CSS Version: 2.0 - Updated for Netlify Deployment */
         * {
             margin: 0;
             padding: 0;
@@ -350,8 +356,10 @@
 
     <script>
         // SVG Rose Animation Controller
+        // JavaScript Version: 2.0 - Updated for Netlify Deployment
         class SVGRoseAnimation {
             constructor() {
+                console.log('SVG Rose Animation v2.0 initializing...');
                 this.rosePetals = document.getElementById('rosePetals');
                 this.roseCenter = document.querySelector('.rose-center');
                 this.messageContainer = document.getElementById('messageContainer');
