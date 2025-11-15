@@ -44,5 +44,5 @@
 
 [[redirects]]
   from = "/original"
-  to = "/index.html"
+  to = "/old-index.html"
   status = 302
